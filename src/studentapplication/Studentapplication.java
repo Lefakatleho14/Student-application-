@@ -41,16 +41,20 @@ public class Studentapplication {
 
     private static void displayMenu() {
         System.out.println("Menu:");
+        System.out.println("****************************************************");
         System.out.println("1. Capture New Student");
         System.out.println("2. Search for Student");
         System.out.println("3. Delete Student");
         System.out.println("4. View Student Report");
         System.out.println("5. Manage Student Courses");
         System.out.println("6. Exit");
+        System.out.println("****************************************************");
         System.out.print("Enter your choice: ");
+        System.out.println("****************************************************");
     }
 
     private static void captureStudent() {
+        System.out.println("****************************************************");
         System.out.print("Enter student ID: ");
         String id = scanner.nextLine();
         System.out.print("Enter student name: ");
@@ -81,6 +85,7 @@ public class Studentapplication {
     }
 
     private static void searchStudent() {
+        System.out.println("****************************************************");
         System.out.print("Enter student ID to search: ");
         String id = scanner.nextLine();
         for (Student student : students) {
@@ -90,9 +95,11 @@ public class Studentapplication {
             }
         }
         System.out.println("Student not found.");
+        System.out.println("****************************************************");
     }
 
     private static void deleteStudent() {
+        System.out.println("****************************************************");
         System.out.print("Enter student ID to delete: ");
         String id = scanner.nextLine();
         for (Student student : students) {
@@ -112,6 +119,7 @@ public class Studentapplication {
     }
 
     private static void studentReport() {
+        System.out.println("****************************************************");
         System.out.println("Student Report:");
         if (students.isEmpty()) {
             System.out.println("No students to display.");
@@ -123,6 +131,7 @@ public class Studentapplication {
     }
 
     private static void manageCourses() {
+        System.out.println("****************************************************");
         System.out.print("Enter student ID to manage courses: ");
         String id = scanner.nextLine();
         Student student = null;
@@ -143,6 +152,7 @@ public class Studentapplication {
             System.out.println("2. Remove Course");
             System.out.println("3. View Courses");
             System.out.println("4. Back to Main Menu");
+            System.out.println("************************************************");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
@@ -172,6 +182,7 @@ public class Studentapplication {
     }
 
     private static void exitApplication() {
+        System.out.println("****************************************************");
         System.out.println("Exiting application. Goodbye!");
     }
 }
